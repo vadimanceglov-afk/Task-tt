@@ -1,0 +1,2 @@
+class UserIsOwnerMixin(object):
+    pass
