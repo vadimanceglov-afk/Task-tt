@@ -4,6 +4,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-success">Зберегти</button>
+        <button type="submit">Зберегти</button>
     </form>
+    <p><a href="{% url 'tasks:task-list' %}">Go Back</a></p>
 {% endblock %}
