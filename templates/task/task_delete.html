@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Видалення</h1>
+    <p>ви впевнені що хочите видалити задачу? "{{ object.title }}"</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Так</button>
+    </form>
+    
+    <a href="{% url 'tasks:task-list' %}">uuu</a>
+{% endblock %}
